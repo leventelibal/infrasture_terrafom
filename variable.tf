@@ -6,7 +6,7 @@ variable "Env" {
 
 }
 
-variable "created by" {
+variable "Created_by" {
 
 }
 
