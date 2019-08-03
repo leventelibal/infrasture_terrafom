@@ -21,3 +21,7 @@ output "pub_sec_group" {
 output "private_sec_group" {
   value = "${aws_security_group.privateDB.id}"
   }
+
+output "key_name" {
+  value = "${var.key_name}"
+}
