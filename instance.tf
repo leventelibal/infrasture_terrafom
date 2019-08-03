@@ -7,7 +7,7 @@ resource "aws_instance" "web1" {
     vpc_security_group_ids = ["${aws_security_grooup.associate_public_id}"]
     associate_public_ip_address = "true"
     user_data = "${file("user_data.sh")}"
-    count = "${var.count}"
+    
 
     tags = {
       Name       = "${var.Name}"
