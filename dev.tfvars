@@ -6,4 +6,4 @@ Dept       = "IT"
     instance_type = "t2.micro"
     key_name = "terraform-key"
     user_data = "userdata.sh"
-    count = "3"
+    
