@@ -1,4 +1,4 @@
-    Name                    ="wordpress"
-    Env                     ="Dev"
-    Created_by              ="Levent"
-    Dept                    ="IT"
+Name       = "wordpress"
+Env        = "Dev"
+Created by = "Levent"
+Dept       = "IT"

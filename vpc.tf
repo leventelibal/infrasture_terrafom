@@ -5,6 +5,6 @@ resource "aws_vpc" "main" {
 tags = {
     Name = "${var.Name}"
     Env = "${var.Env}"
-    Created by = "${var.Created_by}"
+    Created by = "${var.Created by}"
     Dept = "${var.Dept}"
 }
