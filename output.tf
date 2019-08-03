@@ -19,5 +19,5 @@ output "pub_sec_group" {
 
 
 output "private_sec_group" {
-  value = "${aws_security_group.private.id}"
+  value = "${aws_security_group.privateDB.id}"
   }
