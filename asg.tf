@@ -1,6 +1,6 @@
 module "wordpress" {
   source  = "terraform-aws-modules/autoscaling/aws"
-  version = "~> 2.6"
+  version = "3.0"
   
   name = "wordpress"
 
@@ -21,5 +21,4 @@ module "wordpress" {
   max_size                  = 128
   desired_capacity          = 4
   wait_for_capacity_timeout = 0
-
- 
+}
