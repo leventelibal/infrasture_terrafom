@@ -24,5 +24,5 @@ tags = {
     Env = "${var.Env}"
     Created_by = "${var.Created_by}"
     Dept = "${var.Dept}
-  
+}
 }
