@@ -14,9 +14,9 @@ module "mysql" {
   asg_name                  = "wordpress-asg"
   vpc_zone_identifier       = ["${aws_subnet.private.id}"]
   health_check_type         = "EC2"
-  min_size                  = 3
-  max_size                  = 6
-  desired_capacity          = 3
+  min_size                  = "${var.min_db_size}"
+  max_size                  = "${var.max_db_size}"
+  desired_capacity          = "${var.desired_db_capacity_size}"
   wait_for_capacity_timeout = 0
   tags_as_map = {
     Name       = "${var.Name}"
