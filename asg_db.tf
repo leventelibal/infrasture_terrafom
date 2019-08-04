@@ -11,7 +11,7 @@ module "mysql" {
 
  
   # Auto scaling group
-  asg_name                  = "wordpress-asg"
+  asg_name                  = "mysql-asg"
   vpc_zone_identifier       = ["${aws_subnet.private.id}"]
   health_check_type         = "EC2"
   min_size                  = 3
