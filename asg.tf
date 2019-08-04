@@ -3,6 +3,7 @@ module "wordpress" {
   version = "3.0"
   name = "${var.appname}"
 
+
   # Launch configuration
   lc_name = "${var.appname}-lc"
   image_id        = "${var.ami}"
@@ -16,14 +17,12 @@ module "wordpress" {
   health_check_type         = "EC2"
   min_size                  = "${var.min_app_size}"
   max_size                  = "${var.max_app_size}"
-  desired_capacity          = "${var.desired_app_capacity_size}"
+  desired_capacity          = "${var.desired_app_capacity}"
   wait_for_capacity_timeout = 0
   tags_as_map = {
-    Name       = "${var.Name}"
-    Env        = "${var.Env}"
-    Created_by = "${var.Created_by}"
-    Dept       = "${var.Dept}"
+      Name = "${var.Name}"
+      Env = "${var.Env}"
+      Created_by = "${var.Created_by}"
+      Dept = "${var.Dept}"
   }
-
-  
 }
