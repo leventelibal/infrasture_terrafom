@@ -1,12 +1,10 @@
 module "wordpress" {
   source  = "terraform-aws-modules/autoscaling/aws"
   version = "3.0"
-  
   name = "wordpress"
 
   # Launch configuration
   lc_name = "wordpress-lc"
-
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
   security_groups = ["${aws_security_group.public.id}"]
