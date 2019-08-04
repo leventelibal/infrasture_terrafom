@@ -1,4 +1,4 @@
 resource "aws_s3" "bucketname" {
-    bucket =   "infrasructure-levent-2019"
+    bucket =   "infrasructure-levent-april-2019"
   
 }
